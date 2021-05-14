@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring.beans.xsd
+    http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+    
+
+<bean id="questions" class="com.java.collection.Questions">
+
+  <property name="questionid" value="2"></property>
+  <property name="Question" value="Write any 3 fooditem?"></property>
+  <property name="answers" ref="collection3"></property>
+
+
+<util:list id="collection1" value-type="java.lang.String">
+   <value>Burger</value>
+   <value>Idli</value>
+   <value>Dosa</value>
+</util:list>
+
+     <util:map id="collection2" map-class="java.util.Hashmap" key-type="java.lang.Integer" value-type="java.lang.String">
+     
+     <entry key="1" value="God Great"></entry>
+     <entry key="2" value="Belive in God"></entry>
+     </util:map>
+     
+     
+     <util:set id="collection3" value-type="java.lang.String">
+      <value>Always Happy!!</value>
+      <value>Same to you!!</value>
+     </util:set>
+     
+     </bean>
+     </beans>

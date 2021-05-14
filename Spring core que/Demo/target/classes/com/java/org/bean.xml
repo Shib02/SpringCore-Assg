@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    
+    
+    
+
+
+     <bean id="address" class="com.java.org.Addresses">
+     
+        <constructor-arg value="News"> </constructor-arg>
+        <constructor-arg  value="NA"></constructor-arg>
+        <constructor-arg value="South"></constructor-arg>
+        <constructor-arg value="600100"></constructor-arg>
+        <constructor-arg value="India"></constructor-arg>
+     
+     </bean>
+     
+     <bean id="customer" class="com.java.org.Customer">
+     
+     
+      <constructor-arg value="1"> </constructor-arg>
+        <constructor-arg  value="Hello"></constructor-arg>
+        <constructor-arg  value="9021658746"></constructor-arg>
+        <constructor-arg ref="address"></constructor-arg>
+        
+     
+     
+     
+     </bean>
+
+</beans>
